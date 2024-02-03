@@ -7,7 +7,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RouterConfig {
-    @Bean
+    
+	@Bean
 	public RouteLocator routes(RouteLocatorBuilder builder) {
 		return builder.routes()
 		.route("auth", r -> r.path("/v1/auth/**")
